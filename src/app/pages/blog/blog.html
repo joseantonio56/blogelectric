@@ -1,0 +1,258 @@
+<section class="blog-header py-5">
+  <div class="container text-center">
+
+    <p class="text-primary fw-semibold fs-5 mb-2">
+      ⚡ BLOG ELECTRIC
+    </p>
+
+    <h1 class="display-4 fw-bold mb-3">
+      Mi Blog
+    </h1>
+
+    <p class="lead text-secondary mx-auto">
+      Un espacio donde comparto lo que voy aprendiendo sobre
+      programación, electricidad y mis proyectos.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="py-4">
+  <div class="container">
+
+    <div class="d-flex justify-content-center gap-2 flex-wrap">
+
+      <button class="btn btn-primary">
+        <i class="bi bi-grid me-1"></i>
+        Todos
+      </button>
+
+      <button class="btn btn-outline-primary">
+        <i class="bi bi-code-slash me-1"></i>
+        Programación
+      </button>
+
+      <button class="btn btn-outline-warning">
+        <i class="bi bi-lightning-charge me-1"></i>
+        Electricidad
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+
+  <div class="container">
+
+    <div class="row g-4">
+
+
+      <!-- PROGRAMACIÓN -->
+
+      <div class="col-md-6 col-lg-4">
+
+        <article class="card blog-card h-100 border-0 shadow-sm">
+
+          <div class="card-body p-4">
+
+            <span class="badge text-bg-primary mb-3">
+              Programación
+            </span>
+
+            <h2 class="h4 fw-bold">
+              Mi primer proyecto con Angular
+            </h2>
+
+            <p class="text-secondary">
+              Una pequeña introducción al proyecto y a todo lo que
+              estoy aprendiendo trabajando con Angular y TypeScript.
+            </p>
+
+            @if (articuloAbierto !== 1) {
+
+            <button type="button" class="btn btn-outline-primary" (click)="toggleArticulo(1)">
+
+              Leer más
+              <i class="bi bi-arrow-down ms-1"></i>
+
+            </button>
+
+            } @else {
+
+            <div class="mt-3">
+
+              <p class="text-secondary">
+                Durante este proyecto estoy aprendiendo a trabajar
+                con componentes, rutas, servicios y TypeScript.
+                También estoy descubriendo poco a poco cómo organizar
+                correctamente una aplicación Angular para que pueda
+                crecer sin convertirse en un proyecto difícil de mantener.
+                Tambien he creado con spring boot (Java) un proyecto conjunto que lo tengo subido tanto el<strong>
+                  backend</strong> como el <strong> frontend </strong> a Github.
+                asi como este blog para que todo el mundo vea lo que soy capaz de desarrollar ahhh y adaptarme al cambio
+                de angular v16 a versiones mas reciente trabajando con standalone = true.
+                ahora mismo lo tengo como hobby , porque no he tenido ninguna oportunidad como desarrollador . pero sigo
+                practicando para no olvidarme de la programacion .
+              </p>
+
+              <button type="button" class="btn btn-outline-secondary" (click)="toggleArticulo(1)">
+
+                Leer menos
+                <i class="bi bi-arrow-up ms-1"></i>
+
+              </button>
+
+            </div>
+
+            }
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- ELECTRICIDAD -->
+
+      <div class="col-md-6 col-lg-4">
+
+        <article class="card blog-card h-100 border-0 shadow-sm">
+
+          <div class="card-body p-4">
+
+            <span class="badge text-bg-warning mb-3">
+              Electricidad
+            </span>
+
+            <h2 class="h4 fw-bold">
+              Experiencias trabajando como electricista
+            </h2>
+
+            <p class="text-secondary">
+              Experiencias, herramientas y situaciones que he vivido
+              trabajando en el mundo de la electricidad.
+            </p>
+
+            @if (articuloAbierto !== 2) {
+
+            <button type="button" class="btn btn-outline-warning" (click)="toggleArticulo(2)">
+
+              Leer más
+              <i class="bi bi-arrow-down ms-1"></i>
+
+            </button>
+
+            } @else {
+
+            <div class="mt-3">
+
+              <p class="text-secondary">
+                A lo largo de los años he trabajado en diferentes
+                instalaciones eléctricas y he aprendido que, además
+                de conocer la teoría, es fundamental trabajar con
+                orden, seguridad y sentido común. En este espacio
+                iré compartiendo algunas de esas experiencias.
+                Mis logros como electricista empiezan en el año 2000 aprovimadamente tras sobrebibir a un infarto cuando
+                era camionero a nivel profecional el la inspeccion del trabajo me jubilò wn una discapacidad permanente
+                total y con una paga de 380€, y nona mujer que no trabajaba una niña muy pequeña y una hipoteca y es ahi
+                donde te esfuerza al maxio estudiando el tema electrico para poder trabajar de electricista y lo
+                consegui me examine por libre en la F.P. dandome la titulacio de Tecnico Auxiliar en equipo e
+                instalaciones electrotècnicas. con ese titulo me fui para indistria y me examine del carnet instalador
+                autorizado y me dieron Apto ya con ese carne , no deje de trabajar en el mundo electrico con mas de 16
+                años de experiencia. haciendo todo tipo de instalaciones tanto interior (edificios), como
+                exterior(industria, naves industriales).
+                y sigo haciendo instalaciones hoy en dia porque las normativas han cambiado muy poco.
+              </p>
+
+              <button type="button" class="btn btn-outline-secondary" (click)="toggleArticulo(2)">
+
+                Leer menos
+                <i class="bi bi-arrow-up ms-1"></i>
+
+              </button>
+
+            </div>
+
+            }
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- PROYECTOS -->
+
+      <div class="col-md-6 col-lg-4">
+
+        <article class="card blog-card h-100 border-0 shadow-sm">
+
+          <div class="card-body p-4">
+
+            <span class="badge text-bg-danger mb-3">
+              Proyectos
+            </span>
+
+            <h2 class="h4 fw-bold">
+              Creando mi propio blog
+            </h2>
+
+            <p class="text-secondary">
+              El proceso de creación de este blog utilizando Angular,
+              Bootstrap y TypeScript.
+            </p>
+
+            @if (articuloAbierto !== 3) {
+
+            <button type="button" class="btn btn-outline-danger" (click)="toggleArticulo(3)">
+
+              Leer más
+              <i class="bi bi-arrow-down ms-1"></i>
+
+            </button>
+
+            } @else {
+
+            <div class="mt-3">
+
+              <p class="text-secondary">
+                Este blog es uno de mis proyectos personales y lo
+                estoy construyendo poco a poco. La idea es utilizarlo
+                para compartir proyectos, experiencias y todo aquello
+                que pueda resultar interesante mientras sigo aprendiendo
+                programación y desarrollando nuevas aplicaciones.
+                he tenido que actualizar el angular.json, era para ajustar la configuración del proyecto a la versión
+                actual de Angular y evitar problemas relacionados con la forma en que se cargan/actualizan los recursos
+                de JavaScript.
+                bien despues cree los componentes de navbar, home, blog, contacto, proyectos y sobre-mi
+              </p>
+
+              <button type="button" class="btn btn-outline-secondary" (click)="toggleArticulo(3)">
+
+                Leer menos
+                <i class="bi bi-arrow-up ms-1"></i>
+
+              </button>
+
+            </div>
+
+            }
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>

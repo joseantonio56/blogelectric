@@ -1,0 +1,99 @@
+
+/* Página de contacto */
+
+:host {
+  display: block;
+  background-color: #e8dfd0;
+  color: #222222;
+}
+
+
+/* Cabecera */
+
+.contact-hero {
+  background-color: #e8dfd0;
+}
+
+.contact-hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1f1f1f;
+}
+
+.contact-intro {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #252525;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+/* Tarjeta del formulario */
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.10);
+}
+
+
+/* Etiquetas */
+
+.form-label {
+  font-weight: 600;
+  color: #292929;
+}
+
+
+/* Campos */
+
+.form-control {
+  border: 1px solid #d5cec2;
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+
+/* Botón */
+
+.btn-primary {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+/* Información inferior */
+
+.contact-info-section {
+  background-color: #ddd3c2;
+}
+
+.contact-email {
+  color: #333333;
+}
+
+
+/* Responsive */
+
+@media (max-width: 576px) {
+
+  .contact-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+}
+

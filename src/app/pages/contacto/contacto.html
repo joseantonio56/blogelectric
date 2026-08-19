@@ -1,0 +1,182 @@
+<!-- Cabecera -->
+
+<section class="contact-hero py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+                <p class="text-primary fw-semibold fs-5 mb-3">
+                    ⚡ CONTACTO
+                </p>
+
+                <h1 class="display-4 fw-bold mb-4">
+                    Hablemos
+                </h1>
+
+                <p class="contact-intro">
+                    ¿Tienes alguna pregunta, quieres comentar algo sobre el blog
+                    o simplemente quieres ponerte en contacto conmigo?
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Formulario -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="contact-card">
+
+                    <form (ngSubmit)="enviarFormulario()" #contactForm="ngForm">
+
+                        <!-- Nombre -->
+                        <div class="mb-4">
+
+                            <label for="nombre" class="form-label">
+                                <i class="bi bi-person me-2"></i>
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                class="form-control"
+                                [(ngModel)]="nombre"
+                                required
+                                placeholder="Tu nombre">
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="mb-4">
+
+                            <label for="email" class="form-label">
+                                <i class="bi bi-envelope me-2"></i>
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                [(ngModel)]="email"
+                                required
+                                email
+                                placeholder="tu@email.com">
+
+                        </div>
+
+
+                        <!-- Asunto -->
+                        <div class="mb-4">
+
+                            <label for="asunto" class="form-label">
+                                <i class="bi bi-chat-left-text me-2"></i>
+                                Asunto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="asunto"
+                                name="asunto"
+                                class="form-control"
+                                [(ngModel)]="asunto"
+                                required
+                                placeholder="¿Sobre qué quieres escribirme?">
+
+                        </div>
+
+
+                        <!-- Mensaje -->
+                        <div class="mb-4">
+
+                            <label for="mensaje" class="form-label">
+                                <i class="bi bi-pencil-square me-2"></i>
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                class="form-control"
+                                [(ngModel)]="mensaje"
+                                required
+                                rows="6"
+                                placeholder="Escribe aquí tu mensaje..."></textarea>
+
+                        </div>
+
+
+                        <!-- Botón -->
+                        <div class="text-center">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary btn-lg px-5"
+                                [disabled]="contactForm.invalid">
+
+                                <i class="bi bi-send me-2"></i>
+                                Enviar mensaje
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Información adicional -->
+
+<section class="py-5 contact-info-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-md-4">
+
+                <i class="bi bi-envelope-fill display-5 text-primary"></i>
+
+                <h3 class="h5 fw-bold mt-3">
+                    Correo electrónico
+                </h3>
+
+                <p class="contact-email">
+                    <strong>Contacto: </strong> amayapostig@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

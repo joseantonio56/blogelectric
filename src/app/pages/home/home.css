@@ -1,0 +1,112 @@
+/* Fondo general del Home */
+
+:host {
+  display: block;
+  background-color: #e8dfd0;
+  color: #222222;
+}
+
+
+/* Hero */
+
+.hero {
+  background-color: #e8dfd0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1f1f1f;
+  letter-spacing: -0.03em;
+}
+
+.hero p {
+  font-family: 'Segoe UI', sans-serif;
+  color: #292929;
+}
+
+
+/* Texto principal del Hero */
+
+.hero .lead {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: #252525;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Rayo del Hero */
+
+.hero-icon {
+  font-size: 4rem;
+  display: inline-block;
+  animation: electricPulse 2s ease-in-out infinite;
+}
+
+.hero-icon i {
+  display: inline-block;
+  color: #ffc107;
+  transition: transform 0.3s ease;
+}
+
+.hero-icon:hover i {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+@keyframes electricPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1.08);
+    opacity: 0.8;
+  }
+}
+
+
+/* Sección de categorías */
+
+.home-categories {
+  background-color: #ddd3c2;
+}
+
+.home-subtitle {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #292929;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+/* Tarjetas de la portada */
+
+.card {
+  background-color: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.15);
+}

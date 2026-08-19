@@ -1,0 +1,1261 @@
+<section class="projects-page">
+
+    <!-- Cabecera -->
+    <section class="projects-hero py-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-9">
+
+                    <p class="text-primary fw-semibold fs-5 mb-3">
+                        <i class="bi bi-kanban me-2"></i>
+                        PROYECTOS
+                    </p>
+
+                    <h1 class="display-4 fw-bold mb-4">
+                        Proyectos y trabajos
+                    </h1>
+
+                    <p class="projects-intro">
+                        Una selección de proyectos relacionados con el desarrollo
+                        de software, la electricidad y las instalaciones técnicas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Proyectos Full Stack -->
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="section-title mb-5">
+
+                <h2 class="fw-bold">
+                    <i class="bi bi-code-slash me-2 text-primary"></i>
+                    Proyectos Full Stack
+                </h2>
+
+                <p class="text-muted">
+                    Aplicaciones y proyectos desarrollados utilizando diferentes
+                    tecnologías de frontend y backend.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- VentasBar -->
+                <div class="col-md-6">
+
+                    <article class="project-card h-100">
+
+                        <div class="project-icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            VentasBar
+                        </h3>
+
+                        <p>
+                            Sistema de gestión para bar y restaurante,
+                            desarrollado con Angular y Spring Boot.
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge bg-primary me-2">
+                                Angular
+                            </span>
+
+                            <span class="badge bg-dark me-2">
+                                Spring Boot
+                            </span>
+
+                            <span class="badge bg-secondary">
+                                MariaDB
+                            </span>
+
+                        </div>
+
+                        <div class="mt-auto">
+
+                            <button type="button" class="btn btn-outline-primary" (click)="mostrarProyectoVentasBar()">
+
+                                <i class="bi" [class.bi-arrow-right]="!mostrarVentasBar"
+                                    [class.bi-arrow-up]="mostrarVentasBar"></i>
+
+                                {{ mostrarVentasBar ? 'Ocultar proyecto' : 'Mostrar más' }}
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- BlogElectric -->
+                <div class="col-md-6">
+
+                    <article class="project-card h-100">
+
+                        <div class="project-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            BlogElectric
+                        </h3>
+
+                        <p>
+                            Blog personal desarrollado con Angular,
+                            orientado a compartir proyectos, experiencias
+                            y conocimientos.
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="badge bg-primary me-2">
+                                Angular
+                            </span>
+
+                            <span class="badge bg-dark">
+                                TypeScript
+                            </span>
+
+                        </div>
+
+                        <div class="mt-auto">
+
+                            <button type="button" class="btn btn-outline-primary"
+                                (click)="mostrarProyectoBlogElectric()">
+
+                                <i class="bi" [class.bi-arrow-right]="!mostrarBlogElectric"
+                                    [class.bi-arrow-up]="mostrarBlogElectric"></i>
+
+                                {{ mostrarBlogElectric ? 'Ocultar proyecto' : 'Ver proyecto' }}
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- ARTÍCULO VENTASBAR -->
+            <!-- ================================================= -->
+
+            <section *ngIf="mostrarVentasBar" class="mt-5">
+
+                <article class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <!-- Cabecera -->
+
+                        <div class="text-center mb-5">
+
+                            <i class="bi bi-shop display-4 text-primary"></i>
+
+                            <h2 class="fw-bold mt-3">
+                                VentasBar
+                            </h2>
+
+                            <p class="lead text-muted">
+                                Sistema de gestión para bar y restaurante
+                            </p>
+
+                        </div>
+
+
+                        <!-- SOBRE EL PROYECTO -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-3">
+
+                                <i class="bi bi-info-circle text-primary me-2"></i>
+
+                                Sobre el proyecto
+
+                            </h3>
+
+                            <p>
+                                VentasBar es una aplicación de gestión para
+                                bares y restaurantes desarrollada como un
+                                proyecto Full Stack.
+                            </p>
+
+                            <p>
+                                El proyecto combina un frontend desarrollado
+                                con Angular con un backend desarrollado con
+                                Java y Spring Boot, conectado a una base de
+                                datos MariaDB.
+                            </p>
+
+                            <p>
+                                El objetivo es disponer de una aplicación capaz
+                                de gestionar productos, clientes, mesas,
+                                ventas y comandas desde una misma plataforma.
+                            </p>
+
+                        </div>
+
+
+                        <!-- TECNOLOGÍAS -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-3">
+
+                                <i class="bi bi-stack text-primary me-2"></i>
+
+                                Tecnologías utilizadas
+
+                            </h3>
+
+                            <div>
+
+                                <span class="badge bg-primary fs-6 me-2 mb-2">
+                                    Angular
+                                </span>
+
+                                <span class="badge bg-dark fs-6 me-2 mb-2">
+                                    TypeScript
+                                </span>
+
+                                <span class="badge bg-secondary fs-6 me-2 mb-2">
+                                    Java
+                                </span>
+
+                                <span class="badge bg-success fs-6 me-2 mb-2">
+                                    Spring Boot
+                                </span>
+
+                                <span class="badge bg-info text-dark fs-6 me-2 mb-2">
+                                    MariaDB
+                                </span>
+
+                                <span class="badge bg-dark fs-6 me-2 mb-2">
+                                    REST API
+                                </span>
+
+                                <span class="badge bg-primary fs-6 me-2 mb-2">
+                                    WebSocket
+                                </span>
+
+                                <span class="badge bg-light text-dark border fs-6 me-2 mb-2">
+                                    Bootstrap
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- 1. LOGIN -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-4">
+
+                                <i class="bi bi-person-lock text-primary me-2"></i>
+
+                                1. Pantalla de acceso
+
+                            </h3>
+
+                            <div class="row align-items-center g-4">
+
+                                <div class="col-lg-7">
+
+                                    <img src="img/login.png" alt="Pantalla de acceso de VentasBar"
+                                        class="img-fluid rounded shadow-sm">
+
+                                </div>
+
+                                <div class="col-lg-5">
+
+                                    <h4 class="h5 fw-bold">
+                                        Inicio de sesión
+                                    </h4>
+
+                                    <p>
+                                        La aplicación comienza con una pantalla
+                                        de acceso desde la que el usuario puede
+                                        identificarse antes de entrar al sistema.
+                                    </p>
+
+                                    <p>
+                                        El proceso de autenticación se comunica
+                                        con el backend desarrollado con
+                                        Spring Boot para comprobar las
+                                        credenciales del usuario.
+                                    </p>
+
+                                    <p>
+                                        El sistema también permite trabajar con
+                                        diferentes roles de usuario, de manera
+                                        que cada usuario pueda disponer de las
+                                        funciones correspondientes a sus
+                                        permisos.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- 2. DASHBOARD -->
+
+                        <div class="mb-5">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <h3 class="h4 fw-bold mb-0">
+
+                                    <i class="bi bi-grid-1x2 text-primary me-2"></i>
+
+                                    2. Dashboard principal
+
+                                </h3>
+
+                                <button type="button" class="btn btn-outline-primary"
+                                    (click)="mostrarProyectoDashboard()">
+
+                                    <i class="bi" [class.bi-arrow-down]="!mostrarDashboard"
+                                        [class.bi-arrow-up]="mostrarDashboard"></i>
+
+                                    {{ mostrarDashboard ? 'Ocultar dashboard' : 'Mostrar dashboard' }}
+
+                                </button>
+
+                            </div>
+
+
+                            <div *ngIf="mostrarDashboard">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-lg-7">
+
+                                        <img src="img/dashboard.png" alt="Dashboard principal de VentasBar"
+                                            class="img-fluid rounded shadow-sm">
+
+                                    </div>
+
+                                    <div class="col-lg-5">
+
+                                        <h4 class="h5 fw-bold">
+                                            Panel de trabajo
+                                        </h4>
+
+                                        <p>
+                                            Después de iniciar sesión, el usuario
+                                            accede al dashboard principal de
+                                            VentasBar.
+                                        </p>
+
+                                        <p>
+                                            Desde esta pantalla se puede visualizar
+                                            el estado de las mesas del establecimiento
+                                            y acceder a las diferentes funciones
+                                            de gestión de la aplicación.
+                                        </p>
+
+                                        <p>
+                                            El dashboard constituye la pantalla
+                                            principal de trabajo desde la que se
+                                            controla la actividad del bar o restaurante.
+                                        </p>
+
+                                        <div class="mt-3">
+
+                                            <span class="badge bg-primary me-2 mb-2">
+                                                Gestión de mesas
+                                            </span>
+
+                                            <span class="badge bg-success me-2 mb-2">
+                                                Ventas
+                                            </span>
+
+                                            <span class="badge bg-secondary me-2 mb-2">
+                                                Productos
+                                            </span>
+
+                                            <span class="badge bg-dark mb-2">
+                                                Comandas
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- 3. COBRO -->
+
+                        <div class="mb-5">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <h3 class="h4 fw-bold mb-0">
+
+                                    <i class="bi bi-cash-coin text-primary me-2"></i>
+
+                                    3. Sistema de cobro
+
+                                </h3>
+
+                                <button type="button" class="btn btn-outline-primary" (click)="mostrarProyectoCobro()">
+
+                                    <i class="bi" [class.bi-arrow-down]="!mostrarCobro"
+                                        [class.bi-arrow-up]="mostrarCobro"></i>
+
+                                    {{ mostrarCobro ? 'Ocultar cobro' : 'Mostrar cobro' }}
+
+                                </button>
+
+                            </div>
+
+
+                            <div *ngIf="mostrarCobro">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-lg-7">
+
+                                        <img src="img/cobro.png" alt="Pantalla de cobro de VentasBar"
+                                            class="img-fluid rounded shadow-sm">
+
+                                    </div>
+
+                                    <div class="col-lg-5">
+
+                                        <h4 class="h5 fw-bold">
+                                            Cobro de la venta
+                                        </h4>
+
+                                        <p>
+                                            Una vez que el cliente termina su
+                                            consumición, el sistema permite realizar
+                                            el cobro de la venta directamente desde
+                                            el TPV.
+                                        </p>
+
+                                        <p>
+                                            Al seleccionar la opción de cobro aparece
+                                            una pequeña ventana solicitando el
+                                            <strong>efectivo recibido</strong>
+                                            por parte del cliente.
+                                        </p>
+
+                                        <p>
+                                            El sistema comprueba automáticamente la
+                                            cantidad introducida y la compara con el
+                                            total de la venta.
+                                        </p>
+
+                                        <p>
+                                            Mientras el dinero recibido sea inferior
+                                            al total, el botón
+                                            <strong>Continuar</strong>
+                                            permanece deshabilitado.
+                                        </p>
+
+                                        <p>
+                                            Cuando se introduce una cantidad igual
+                                            o superior al total de la venta, el botón
+                                            <strong>Continuar</strong> se habilita y,
+                                            si se ha entregado más dinero del necesario,
+                                            el sistema calcula automáticamente el cambio
+                                            que debe devolverse.
+                                        </p>
+
+                                        <div class="mt-3">
+
+                                            <span class="badge bg-primary me-2 mb-2">
+                                                Efectivo recibido
+                                            </span>
+
+                                            <span class="badge bg-warning text-dark me-2 mb-2">
+                                                Comprobación del importe
+                                            </span>
+
+                                            <span class="badge bg-success me-2 mb-2">
+                                                Cálculo del cambio
+                                            </span>
+
+                                            <span class="badge bg-secondary mb-2">
+                                                Confirmación de venta
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- 4. COMANDAS -->
+
+                        <div class="mb-5">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <h3 class="h4 fw-bold mb-0">
+
+                                    <i class="bi bi-phone text-primary me-2"></i>
+
+                                    4. Comandas desde dispositivo móvil
+
+                                </h3>
+
+                                <button type="button" class="btn btn-outline-primary"
+                                    (click)="mostrarProyectoComandas()">
+
+                                    <i class="bi" [class.bi-arrow-down]="!mostrarComandas"
+                                        [class.bi-arrow-up]="mostrarComandas"></i>
+
+                                    {{ mostrarComandas ? 'Ocultar comandas' : 'Mostrar comandas' }}
+
+                                </button>
+
+                            </div>
+
+
+                            <div *ngIf="mostrarComandas">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-lg-7">
+
+                                        <img src="img/comandas.png" alt="Sistema de comandas desde dispositivo móvil"
+                                            class="img-fluid rounded shadow-sm">
+
+                                    </div>
+
+                                    <div class="col-lg-5">
+
+                                        <h4 class="h5 fw-bold">
+                                            Comandas en tiempo real
+                                        </h4>
+
+                                        <p>
+                                            El sistema permite que el camarero pueda
+                                            tomar las comandas directamente desde un
+                                            dispositivo móvil.
+                                        </p>
+
+                                        <p>
+                                            Una vez enviada la comanda, esta se recibe
+                                            en tiempo real y se clasifica según el
+                                            destino de los productos:
+                                            <strong>Barra</strong> o
+                                            <strong>Cocina</strong>.
+                                        </p>
+
+                                        <p>
+                                            Cada comanda muestra información como
+                                            el número de mesa, el nombre del camarero
+                                            y los productos solicitados.
+                                        </p>
+
+                                        <p>
+                                            Desde la pantalla de gestión también
+                                            existe un botón de
+                                            <strong>imprimir</strong>
+                                            para generar la comanda correspondiente
+                                            y facilitar su preparación por el
+                                            personal de barra o cocina.
+                                        </p>
+
+                                        <div class="mt-3">
+
+                                            <span class="badge bg-primary me-2 mb-2">
+                                                Dispositivo móvil
+                                            </span>
+
+                                            <span class="badge bg-success me-2 mb-2">
+                                                Barra
+                                            </span>
+
+                                            <span class="badge bg-warning text-dark me-2 mb-2">
+                                                Cocina
+                                            </span>
+
+                                            <span class="badge bg-dark me-2 mb-2">
+                                                WebSocket
+                                            </span>
+
+                                            <span class="badge bg-secondary mb-2">
+                                                Impresión
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CIERRE VENTASBAR -->
+
+                        <div class="text-center pt-4 border-top">
+
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="mostrarProyectoVentasBar()">
+
+                                <i class="bi bi-x-circle me-2"></i>
+
+                                Cerrar proyecto
+
+                            </button>
+
+                            <p class="text-muted mt-4 mb-0">
+                                En las siguientes secciones mostraré la gestión
+                                de productos, las ventas y la conexión desde
+                                dispositivos móviles.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ================================================= -->
+            <!-- ARTÍCULO BLOGELECTRIC -->
+            <!-- ================================================= -->
+
+            <section *ngIf="mostrarBlogElectric" class="mt-5">
+
+                <article class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <!-- Cabecera -->
+
+                        <div class="text-center mb-5">
+
+                            <i class="bi bi-code-square display-4 text-primary"></i>
+
+                            <h2 class="fw-bold mt-3">
+                                BlogElectric
+                            </h2>
+
+                            <p class="lead text-muted">
+                                Blog personal desarrollado con Angular
+                            </p>
+
+                        </div>
+
+
+                        <!-- SOBRE EL PROYECTO -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-3">
+
+                                <i class="bi bi-info-circle text-primary me-2"></i>
+
+                                Sobre el proyecto
+
+                            </h3>
+
+                            <p>
+                                BlogElectric es un blog personal desarrollado con
+                                Angular, creado para compartir proyectos, experiencias
+                                y conocimientos relacionados con el desarrollo de
+                                software y el mundo de la electricidad.
+                            </p>
+
+                            <p>
+                                El proyecto está diseñado como un espacio personal
+                                donde se pueden mostrar diferentes trabajos,
+                                proyectos realizados y contenidos técnicos.
+                            </p>
+
+                        </div>
+
+
+                        <!-- TECNOLOGÍAS -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-3">
+
+                                <i class="bi bi-stack text-primary me-2"></i>
+
+                                Tecnologías utilizadas
+
+                            </h3>
+
+                            <div>
+
+                                <span class="badge bg-primary fs-6 me-2 mb-2">
+                                    Angular
+                                </span>
+
+                                <span class="badge bg-dark fs-6 me-2 mb-2">
+                                    TypeScript
+                                </span>
+
+                                <span class="badge bg-light text-dark border fs-6 me-2 mb-2">
+                                    HTML
+                                </span>
+
+                                <span class="badge bg-secondary fs-6 me-2 mb-2">
+                                    CSS
+                                </span>
+
+                                <span class="badge bg-primary fs-6 me-2 mb-2">
+                                    Bootstrap
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- 1. HOME -->
+
+                        <div class="mb-5">
+
+                            <h3 class="h4 fw-bold mb-4">
+
+                                <i class="bi bi-house-door text-primary me-2"></i>
+
+                                1. Página principal
+
+                            </h3>
+
+                            <div class="row align-items-center g-4">
+
+                                <div class="col-lg-7">
+
+                                    <img src="img/home.png" alt="Página principal de BlogElectric"
+                                        class="img-fluid rounded shadow-sm">
+
+                                </div>
+
+                                <div class="col-lg-5">
+
+                                    <h4 class="h5 fw-bold">
+                                        Página de inicio
+                                    </h4>
+
+                                    <p>
+                                        La página principal es la primera pantalla
+                                        que aparece al acceder a BlogElectric.
+                                    </p>
+
+                                    <p>
+                                        Desde esta pantalla el visitante puede conocer
+                                        el propósito del blog y acceder a las diferentes
+                                        secciones y contenidos disponibles.
+                                    </p>
+
+                                    <p>
+                                        La página está diseñada para ofrecer una
+                                        presentación clara y sencilla del proyecto,
+                                        facilitando la navegación por el sitio.
+                                    </p>
+
+                                    <div class="mt-3">
+
+                                        <span class="badge bg-primary me-2 mb-2">
+                                            Angular
+                                        </span>
+
+                                        <span class="badge bg-dark me-2 mb-2">
+                                            TypeScript
+                                        </span>
+
+                                        <span class="badge bg-secondary mb-2">
+                                            Responsive
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CIERRE BLOGELECTRIC -->
+
+                        <div class="text-center pt-4 border-top">
+
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="mostrarProyectoBlogElectric()">
+
+                                <i class="bi bi-x-circle me-2"></i>
+
+                                Cerrar proyecto
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- PROYECTOS ELÉCTRICOS -->
+    <!-- ================================================= -->
+
+    <section class="py-5 electrical-projects">
+
+        <div class="container">
+
+            <div class="section-title mb-5">
+
+                <h2 class="fw-bold">
+
+                    <i class="bi bi-lightning-charge-fill me-2 text-primary"></i>
+
+                    Proyectos eléctricos
+
+                </h2>
+
+                <p class="text-muted">
+                    Trabajos e instalaciones realizados a lo largo de mi
+                    experiencia profesional como electricista.
+                </p>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- PROYECTOS ELÉCTRICOS -->
+            <!-- ================================================= -->
+
+            <section class="py-5 electrical-projects">
+
+                <div class="container">
+
+                    <div class="section-title mb-5">
+
+                        <h2 class="fw-bold">
+
+                            <i class="bi bi-lightning-charge-fill me-2 text-primary"></i>
+
+                            Proyectos eléctricos
+
+                        </h2>
+
+                        <p class="text-muted">
+                            Trabajos e instalaciones realizados a lo largo de mi
+                            experiencia profesional como electricista.
+                        </p>
+
+                    </div>
+
+
+                    <div class="row g-4">
+
+                        <!-- Rehabilitación -->
+
+                        <div class="col-md-6">
+
+                            <article class="project-card h-100">
+
+                                <div class="project-icon">
+
+                                    <i class="bi bi-building"></i>
+
+                                </div>
+
+                                <h3 class="h4 fw-bold">
+                                    Rehabilitación de edificios
+                                </h3>
+
+                                <p>
+                                    Trabajos de rehabilitación y ejecución de
+                                    instalaciones eléctricas en edificios. Como
+                                    centralización de contadores y puesta de nuevas
+                                    líneas individuales para cada vivienda.
+                                    C.G.P. también nueva.
+                                </p>
+
+                                <div class="mt-auto">
+
+                                    <button type="button" class="btn btn-outline-primary"
+                                        (click)="mostrarProyectoRehabilitacion()">
+
+                                        <i class="bi" [class.bi-arrow-right]="!mostrarRehabilitacion"
+                                            [class.bi-arrow-up]="mostrarRehabilitacion"></i>
+
+                                        {{ mostrarRehabilitacion ? 'Cerrar proyecto' : 'Ver proyecto' }}
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- Megafonía -->
+
+                        <div class="col-md-6">
+
+                            <article class="project-card h-100">
+
+                                <div class="project-icon">
+
+                                    <i class="bi bi-megaphone"></i>
+
+                                </div>
+
+                                <h3 class="h4 fw-bold">
+                                    Instalación de megafonía
+                                </h3>
+
+                                <p>
+                                    Instalación de sistemas de megafonía utilizando
+                                    canalización mediante tubos de acero galvanizado
+                                    en caliente.
+                                </p>
+
+                                <div class="mt-auto">
+
+                                    <button type="button" class="btn btn-outline-primary"
+                                        (click)="mostrarProyectoMegafonia()">
+
+                                        <i class="bi" [class.bi-arrow-right]="!mostrarMegafonia"
+                                            [class.bi-arrow-up]="mostrarMegafonia"></i>
+
+                                        {{ mostrarMegafonia ? 'Cerrar proyecto' : 'Ver proyecto' }}
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- MODAL REHABILITACIÓN DE EDIFICIOS -->
+                    <!-- ================================================= -->
+
+                    <div *ngIf="mostrarRehabilitacion" class="modal fade show d-block" tabindex="-1" role="dialog"
+                        aria-modal="true">
+
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title fw-bold">
+
+                                        <i class="bi bi-building text-primary me-2"></i>
+
+                                        Rehabilitación de edificios
+
+                                    </h5>
+
+                                   <!-- Botón Rehabilitación -->
+
+<button
+    type="button"
+    class="btn btn-danger"
+    (click)="mostrarProyectoRehabilitacion()"
+>
+    PROBAR REHABILITACIÓN
+</button>
+
+<p *ngIf="mostrarRehabilitacion">
+    FUNCIONA REHABILITACIÓN
+</p>
+
+                                </div>
+
+
+                                <div class="modal-body">
+
+                                    <div class="text-center mb-4">
+
+                                        <i class="bi bi-building display-4 text-primary"></i>
+
+                                        <h4 class="fw-bold mt-3">
+                                            Rehabilitación de instalaciones eléctricas
+                                        </h4>
+
+                                    </div>
+
+
+                                    <p>
+                                        Trabajos de rehabilitación y renovación de las
+                                        instalaciones eléctricas de edificios, adaptando
+                                        las instalaciones existentes a las nuevas
+                                        necesidades del inmueble.
+                                    </p>
+
+                                    <p>
+                                        Uno de los trabajos realizados consiste en la
+                                        <strong>centralización de contadores</strong>,
+                                        realizando una nueva distribución y organización
+                                        de los equipos de medida.
+                                    </p>
+
+                                    <p>
+                                        También se ejecutan las
+                                        <strong>líneas individuales de cada vivienda</strong>,
+                                        instalando nuevas canalizaciones y conductores
+                                        desde la centralización hasta cada piso.
+                                    </p>
+
+                                    <p>
+                                        Dentro de la rehabilitación también se realiza la
+                                        instalación de una nueva
+                                        <strong>C.G.P. (Caja General de Protección)</strong>,
+                                        adaptando la instalación a las condiciones
+                                        requeridas.
+                                    </p>
+
+
+                                    <div class="mt-4">
+
+                                        <span class="badge bg-primary me-2 mb-2">
+                                            Centralización de contadores
+                                        </span>
+
+                                        <span class="badge bg-secondary me-2 mb-2">
+                                            Líneas individuales
+                                        </span>
+
+                                        <span class="badge bg-success me-2 mb-2">
+                                            C.G.P.
+                                        </span>
+
+                                        <span class="badge bg-dark mb-2">
+                                            Instalación eléctrica
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-outline-secondary"
+                                        (click)="mostrarProyectoRehabilitacion()">
+
+                                        <i class="bi bi-x-circle me-2"></i>
+
+                                        Cerrar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================================================= -->
+                    <!-- MODAL INSTALACIÓN DE MEGAFONÍA -->
+                    <!-- ================================================= -->
+
+                    <div *ngIf="mostrarMegafonia" class="modal fade show d-block" tabindex="-1" role="dialog"
+                        aria-modal="true">
+
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title fw-bold">
+
+                                        <i class="bi bi-megaphone text-primary me-2"></i>
+
+                                        Instalación de megafonía
+
+                                    </h5>
+
+                                   <button
+    type="button"
+    class="btn btn-danger"
+    (click)="mostrarProyectoMegafonia()"
+>
+    PROBAR MEGAFONÍA
+</button>
+
+<p *ngIf="mostrarMegafonia">
+    FUNCIONA MEGAFONÍA
+</p>
+
+                                </div>
+
+
+                                <div class="modal-body">
+
+                                    <div class="text-center mb-4">
+
+                                        <i class="bi bi-megaphone display-4 text-primary"></i>
+
+                                        <h4 class="fw-bold mt-3">
+                                            Instalación de sistemas de megafonía
+                                        </h4>
+
+                                    </div>
+
+
+                                    <p>
+                                        Instalación de sistemas de megafonía destinados
+                                        a la distribución de sonido mediante una red de
+                                        altavoces y cableado específico.
+                                    </p>
+
+                                    <p>
+                                        Para la instalación se utilizan
+                                        <strong>canalizaciones mediante tubos de acero
+                                            galvanizado en caliente</strong>, proporcionando
+                                        una instalación resistente y adecuada para
+                                        instalaciones técnicas.
+                                    </p>
+
+                                    <p>
+                                        El trabajo incluye la instalación y distribución
+                                        de las canalizaciones, el tendido del cableado
+                                        y la conexión de los diferentes elementos del
+                                        sistema de megafonía.
+                                    </p>
+
+
+                                    <div class="mt-4">
+
+                                        <span class="badge bg-primary me-2 mb-2">
+                                            Megafonía
+                                        </span>
+
+                                        <span class="badge bg-secondary me-2 mb-2">
+                                            Canalización
+                                        </span>
+
+                                        <span class="badge bg-dark me-2 mb-2">
+                                            Acero galvanizado
+                                        </span>
+
+                                        <span class="badge bg-success mb-2">
+                                            Instalación eléctrica
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-outline-secondary"
+                                        (click)="mostrarProyectoMegafonia()">
+
+                                        <i class="bi bi-x-circle me-2"></i>
+
+                                        Cerrar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Fondo oscuro de los modales -->
+
+                    <div *ngIf="mostrarRehabilitacion || mostrarMegafonia" class="modal-backdrop fade show"></div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cierre -->
+
+    <section class="py-5 text-center">
+
+        <div class="container">
+
+            <i class="bi bi-tools display-5 text-primary"></i>
+
+            <h2 class="h3 fw-bold mt-3">
+                Experiencia que combina tecnología y oficio
+            </h2>
+
+            <p class="projects-intro mx-auto">
+                Desarrollo de software e instalaciones eléctricas forman
+                parte de un mismo recorrido profesional.
+            </p>
+
+        </div>
+
+    </section>
+
+</section>

@@ -1,0 +1,97 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a
+      class="navbar-brand fw-bold"
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
+
+      <i class="bi bi-lightning-charge-fill me-2"></i>
+      Blog Electric
+
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarPrincipal"
+      aria-controls="navbarPrincipal"
+      aria-expanded="false"
+      aria-label="Mostrar menú">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+
+            <i class="bi bi-house-door me-1"></i>
+            Inicio
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/blog"
+            routerLinkActive="active">
+
+            <i class="bi bi-journal-text me-1"></i>
+            Blog
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/proyectos"
+            routerLinkActive="active">
+
+            <i class="bi bi-code-slash me-1"></i>
+            Proyectos
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/sobre-mi"
+            routerLinkActive="active">
+
+            <i class="bi bi-person me-1"></i>
+            Sobre mí
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/contacto"
+            routerLinkActive="active">
+
+            <i class="bi bi-envelope me-1"></i>
+            Contacto
+
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
