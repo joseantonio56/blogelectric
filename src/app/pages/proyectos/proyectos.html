@@ -1,12 +1,12 @@
 <section class="projects-page">
 
-    <!-- Cabecera -->
+    <!-- ================================================= -->
+    <!-- CABECERA -->
+    <!-- ================================================= -->
+
     <section class="projects-hero py-5">
-
         <div class="container">
-
             <div class="row justify-content-center text-center">
-
                 <div class="col-lg-9">
 
                     <p class="text-primary fw-semibold fs-5 mb-3">
@@ -24,15 +24,15 @@
                     </p>
 
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
 
-    <!-- Proyectos Full Stack -->
+    <!-- ================================================= -->
+    <!-- PROYECTOS FULL STACK -->
+    <!-- ================================================= -->
+
     <section class="py-5">
 
         <div class="container">
@@ -54,7 +54,10 @@
 
             <div class="row g-4">
 
-                <!-- VentasBar -->
+                <!-- ================================================= -->
+                <!-- VENTASBAR -->
+                <!-- ================================================= -->
+
                 <div class="col-md-6">
 
                     <article class="project-card h-100">
@@ -93,7 +96,8 @@
                             <button type="button" class="btn btn-outline-primary" (click)="mostrarProyectoVentasBar()">
 
                                 <i class="bi" [class.bi-arrow-right]="!mostrarVentasBar"
-                                    [class.bi-arrow-up]="mostrarVentasBar"></i>
+                                    [class.bi-arrow-up]="mostrarVentasBar">
+                                </i>
 
                                 {{ mostrarVentasBar ? 'Ocultar proyecto' : 'Mostrar más' }}
 
@@ -106,7 +110,10 @@
                 </div>
 
 
-                <!-- BlogElectric -->
+                <!-- ================================================= -->
+                <!-- BLOGELECTRIC -->
+                <!-- ================================================= -->
+
                 <div class="col-md-6">
 
                     <article class="project-card h-100">
@@ -143,7 +150,8 @@
                                 (click)="mostrarProyectoBlogElectric()">
 
                                 <i class="bi" [class.bi-arrow-right]="!mostrarBlogElectric"
-                                    [class.bi-arrow-up]="mostrarBlogElectric"></i>
+                                    [class.bi-arrow-up]="mostrarBlogElectric">
+                                </i>
 
                                 {{ mostrarBlogElectric ? 'Ocultar proyecto' : 'Ver proyecto' }}
 
@@ -168,7 +176,7 @@
 
                     <div class="card-body p-4 p-lg-5">
 
-                        <!-- Cabecera -->
+                        <!-- CABECERA -->
 
                         <div class="text-center mb-5">
 
@@ -192,7 +200,6 @@
                             <h3 class="h4 fw-bold mb-3">
 
                                 <i class="bi bi-info-circle text-primary me-2"></i>
-
                                 Sobre el proyecto
 
                             </h3>
@@ -226,7 +233,6 @@
                             <h3 class="h4 fw-bold mb-3">
 
                                 <i class="bi bi-stack text-primary me-2"></i>
-
                                 Tecnologías utilizadas
 
                             </h3>
@@ -270,14 +276,15 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- 1. LOGIN -->
+                        <!-- ================================================= -->
 
                         <div class="mb-5">
 
                             <h3 class="h4 fw-bold mb-4">
 
                                 <i class="bi bi-person-lock text-primary me-2"></i>
-
                                 1. Pantalla de acceso
 
                             </h3>
@@ -325,7 +332,9 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- 2. DASHBOARD -->
+                        <!-- ================================================= -->
 
                         <div class="mb-5">
 
@@ -334,7 +343,6 @@
                                 <h3 class="h4 fw-bold mb-0">
 
                                     <i class="bi bi-grid-1x2 text-primary me-2"></i>
-
                                     2. Dashboard principal
 
                                 </h3>
@@ -343,7 +351,8 @@
                                     (click)="mostrarProyectoDashboard()">
 
                                     <i class="bi" [class.bi-arrow-down]="!mostrarDashboard"
-                                        [class.bi-arrow-up]="mostrarDashboard"></i>
+                                        [class.bi-arrow-up]="mostrarDashboard">
+                                    </i>
 
                                     {{ mostrarDashboard ? 'Ocultar dashboard' : 'Mostrar dashboard' }}
 
@@ -417,7 +426,9 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- 3. COBRO -->
+                        <!-- ================================================= -->
 
                         <div class="mb-5">
 
@@ -426,7 +437,6 @@
                                 <h3 class="h4 fw-bold mb-0">
 
                                     <i class="bi bi-cash-coin text-primary me-2"></i>
-
                                     3. Sistema de cobro
 
                                 </h3>
@@ -434,7 +444,8 @@
                                 <button type="button" class="btn btn-outline-primary" (click)="mostrarProyectoCobro()">
 
                                     <i class="bi" [class.bi-arrow-down]="!mostrarCobro"
-                                        [class.bi-arrow-up]="mostrarCobro"></i>
+                                        [class.bi-arrow-up]="mostrarCobro">
+                                    </i>
 
                                     {{ mostrarCobro ? 'Ocultar cobro' : 'Mostrar cobro' }}
 
@@ -525,7 +536,9 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- 4. COMANDAS -->
+                        <!-- ================================================= -->
 
                         <div class="mb-5">
 
@@ -534,7 +547,6 @@
                                 <h3 class="h4 fw-bold mb-0">
 
                                     <i class="bi bi-phone text-primary me-2"></i>
-
                                     4. Comandas desde dispositivo móvil
 
                                 </h3>
@@ -543,7 +555,8 @@
                                     (click)="mostrarProyectoComandas()">
 
                                     <i class="bi" [class.bi-arrow-down]="!mostrarComandas"
-                                        [class.bi-arrow-up]="mostrarComandas"></i>
+                                        [class.bi-arrow-up]="mostrarComandas">
+                                    </i>
 
                                     {{ mostrarComandas ? 'Ocultar comandas' : 'Mostrar comandas' }}
 
@@ -631,7 +644,9 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- CIERRE VENTASBAR -->
+                        <!-- ================================================= -->
 
                         <div class="text-center pt-4 border-top">
 
@@ -639,7 +654,6 @@
                                 (click)="mostrarProyectoVentasBar()">
 
                                 <i class="bi bi-x-circle me-2"></i>
-
                                 Cerrar proyecto
 
                             </button>
@@ -669,7 +683,7 @@
 
                     <div class="card-body p-4 p-lg-5">
 
-                        <!-- Cabecera -->
+                        <!-- CABECERA -->
 
                         <div class="text-center mb-5">
 
@@ -693,7 +707,6 @@
                             <h3 class="h4 fw-bold mb-3">
 
                                 <i class="bi bi-info-circle text-primary me-2"></i>
-
                                 Sobre el proyecto
 
                             </h3>
@@ -721,7 +734,6 @@
                             <h3 class="h4 fw-bold mb-3">
 
                                 <i class="bi bi-stack text-primary me-2"></i>
-
                                 Tecnologías utilizadas
 
                             </h3>
@@ -753,14 +765,15 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- 1. HOME -->
+                        <!-- ================================================= -->
 
                         <div class="mb-5">
 
                             <h3 class="h4 fw-bold mb-4">
 
                                 <i class="bi bi-house-door text-primary me-2"></i>
-
                                 1. Página principal
 
                             </h3>
@@ -820,7 +833,9 @@
                         </div>
 
 
+                        <!-- ================================================= -->
                         <!-- CIERRE BLOGELECTRIC -->
+                        <!-- ================================================= -->
 
                         <div class="text-center pt-4 border-top">
 
@@ -828,7 +843,6 @@
                                 (click)="mostrarProyectoBlogElectric()">
 
                                 <i class="bi bi-x-circle me-2"></i>
-
                                 Cerrar proyecto
 
                             </button>
@@ -859,7 +873,6 @@
                 <h2 class="fw-bold">
 
                     <i class="bi bi-lightning-charge-fill me-2 text-primary"></i>
-
                     Proyectos eléctricos
 
                 </h2>
@@ -872,372 +885,506 @@
             </div>
 
 
-            <!-- ================================================= -->
-            <!-- PROYECTOS ELÉCTRICOS -->
-            <!-- ================================================= -->
+            <div class="row g-4">
 
-            <section class="py-5 electrical-projects">
+                <!-- ================================================= -->
+                <!-- REHABILITACIÓN -->
+                <!-- ================================================= -->
 
-                <div class="container">
+                <div class="col-md-6">
 
-                    <div class="section-title mb-5">
+                    <article class="project-card h-100">
 
-                        <h2 class="fw-bold">
+                        <div class="project-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
 
-                            <i class="bi bi-lightning-charge-fill me-2 text-primary"></i>
+                        <h3 class="h4 fw-bold">
+                            Rehabilitación de edificios
+                        </h3>
 
-                            Proyectos eléctricos
-
-                        </h2>
-
-                        <p class="text-muted">
-                            Trabajos e instalaciones realizados a lo largo de mi
-                            experiencia profesional como electricista.
+                        <p>
+                            Trabajos de rehabilitación y ejecución de
+                            instalaciones eléctricas en edificios. Como
+                            centralización de contadores y puesta de nuevas
+                            líneas individuales para cada vivienda.
+                            C.G.P. también nueva.
                         </p>
 
-                    </div>
+                        <div class="mt-auto">
 
+                            <button type="button" class="btn btn-outline-primary"
+                                (click)="mostrarProyectoRehabilitacion()">
 
-                    <div class="row g-4">
+                                <i class="bi" [class.bi-arrow-right]="!mostrarRehabilitacion"
+                                    [class.bi-arrow-up]="mostrarRehabilitacion">
+                                </i>
 
-                        <!-- Rehabilitación -->
+                                {{ mostrarRehabilitacion ? 'Cerrar proyecto' : 'Ver proyecto' }}
 
-                        <div class="col-md-6">
-
-                            <article class="project-card h-100">
-
-                                <div class="project-icon">
-
-                                    <i class="bi bi-building"></i>
-
-                                </div>
-
-                                <h3 class="h4 fw-bold">
-                                    Rehabilitación de edificios
-                                </h3>
-
-                                <p>
-                                    Trabajos de rehabilitación y ejecución de
-                                    instalaciones eléctricas en edificios. Como
-                                    centralización de contadores y puesta de nuevas
-                                    líneas individuales para cada vivienda.
-                                    C.G.P. también nueva.
-                                </p>
-
-                                <div class="mt-auto">
-
-                                    <button type="button" class="btn btn-outline-primary"
-                                        (click)="mostrarProyectoRehabilitacion()">
-
-                                        <i class="bi" [class.bi-arrow-right]="!mostrarRehabilitacion"
-                                            [class.bi-arrow-up]="mostrarRehabilitacion"></i>
-
-                                        {{ mostrarRehabilitacion ? 'Cerrar proyecto' : 'Ver proyecto' }}
-
-                                    </button>
-
-                                </div>
-
-                            </article>
+                            </button>
 
                         </div>
 
-
-                        <!-- Megafonía -->
-
-                        <div class="col-md-6">
-
-                            <article class="project-card h-100">
-
-                                <div class="project-icon">
-
-                                    <i class="bi bi-megaphone"></i>
-
-                                </div>
-
-                                <h3 class="h4 fw-bold">
-                                    Instalación de megafonía
-                                </h3>
-
-                                <p>
-                                    Instalación de sistemas de megafonía utilizando
-                                    canalización mediante tubos de acero galvanizado
-                                    en caliente.
-                                </p>
-
-                                <div class="mt-auto">
-
-                                    <button type="button" class="btn btn-outline-primary"
-                                        (click)="mostrarProyectoMegafonia()">
-
-                                        <i class="bi" [class.bi-arrow-right]="!mostrarMegafonia"
-                                            [class.bi-arrow-up]="mostrarMegafonia"></i>
-
-                                        {{ mostrarMegafonia ? 'Cerrar proyecto' : 'Ver proyecto' }}
-
-                                    </button>
-
-                                </div>
-
-                            </article>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================================================= -->
-                    <!-- MODAL REHABILITACIÓN DE EDIFICIOS -->
-                    <!-- ================================================= -->
-
-                    <div *ngIf="mostrarRehabilitacion" class="modal fade show d-block" tabindex="-1" role="dialog"
-                        aria-modal="true">
-
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-
-                            <div class="modal-content">
-
-                                <div class="modal-header">
-
-                                    <h5 class="modal-title fw-bold">
-
-                                        <i class="bi bi-building text-primary me-2"></i>
-
-                                        Rehabilitación de edificios
-
-                                    </h5>
-
-                                   <!-- Botón Rehabilitación -->
-
-<button
-    type="button"
-    class="btn btn-danger"
-    (click)="mostrarProyectoRehabilitacion()"
->
-    PROBAR REHABILITACIÓN
-</button>
-
-<p *ngIf="mostrarRehabilitacion">
-    FUNCIONA REHABILITACIÓN
-</p>
-
-                                </div>
-
-
-                                <div class="modal-body">
-
-                                    <div class="text-center mb-4">
-
-                                        <i class="bi bi-building display-4 text-primary"></i>
-
-                                        <h4 class="fw-bold mt-3">
-                                            Rehabilitación de instalaciones eléctricas
-                                        </h4>
-
-                                    </div>
-
-
-                                    <p>
-                                        Trabajos de rehabilitación y renovación de las
-                                        instalaciones eléctricas de edificios, adaptando
-                                        las instalaciones existentes a las nuevas
-                                        necesidades del inmueble.
-                                    </p>
-
-                                    <p>
-                                        Uno de los trabajos realizados consiste en la
-                                        <strong>centralización de contadores</strong>,
-                                        realizando una nueva distribución y organización
-                                        de los equipos de medida.
-                                    </p>
-
-                                    <p>
-                                        También se ejecutan las
-                                        <strong>líneas individuales de cada vivienda</strong>,
-                                        instalando nuevas canalizaciones y conductores
-                                        desde la centralización hasta cada piso.
-                                    </p>
-
-                                    <p>
-                                        Dentro de la rehabilitación también se realiza la
-                                        instalación de una nueva
-                                        <strong>C.G.P. (Caja General de Protección)</strong>,
-                                        adaptando la instalación a las condiciones
-                                        requeridas.
-                                    </p>
-
-
-                                    <div class="mt-4">
-
-                                        <span class="badge bg-primary me-2 mb-2">
-                                            Centralización de contadores
-                                        </span>
-
-                                        <span class="badge bg-secondary me-2 mb-2">
-                                            Líneas individuales
-                                        </span>
-
-                                        <span class="badge bg-success me-2 mb-2">
-                                            C.G.P.
-                                        </span>
-
-                                        <span class="badge bg-dark mb-2">
-                                            Instalación eléctrica
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="modal-footer">
-
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        (click)="mostrarProyectoRehabilitacion()">
-
-                                        <i class="bi bi-x-circle me-2"></i>
-
-                                        Cerrar
-
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================================================= -->
-                    <!-- MODAL INSTALACIÓN DE MEGAFONÍA -->
-                    <!-- ================================================= -->
-
-                    <div *ngIf="mostrarMegafonia" class="modal fade show d-block" tabindex="-1" role="dialog"
-                        aria-modal="true">
-
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-
-                            <div class="modal-content">
-
-                                <div class="modal-header">
-
-                                    <h5 class="modal-title fw-bold">
-
-                                        <i class="bi bi-megaphone text-primary me-2"></i>
-
-                                        Instalación de megafonía
-
-                                    </h5>
-
-                                   <button
-    type="button"
-    class="btn btn-danger"
-    (click)="mostrarProyectoMegafonia()"
->
-    PROBAR MEGAFONÍA
-</button>
-
-<p *ngIf="mostrarMegafonia">
-    FUNCIONA MEGAFONÍA
-</p>
-
-                                </div>
-
-
-                                <div class="modal-body">
-
-                                    <div class="text-center mb-4">
-
-                                        <i class="bi bi-megaphone display-4 text-primary"></i>
-
-                                        <h4 class="fw-bold mt-3">
-                                            Instalación de sistemas de megafonía
-                                        </h4>
-
-                                    </div>
-
-
-                                    <p>
-                                        Instalación de sistemas de megafonía destinados
-                                        a la distribución de sonido mediante una red de
-                                        altavoces y cableado específico.
-                                    </p>
-
-                                    <p>
-                                        Para la instalación se utilizan
-                                        <strong>canalizaciones mediante tubos de acero
-                                            galvanizado en caliente</strong>, proporcionando
-                                        una instalación resistente y adecuada para
-                                        instalaciones técnicas.
-                                    </p>
-
-                                    <p>
-                                        El trabajo incluye la instalación y distribución
-                                        de las canalizaciones, el tendido del cableado
-                                        y la conexión de los diferentes elementos del
-                                        sistema de megafonía.
-                                    </p>
-
-
-                                    <div class="mt-4">
-
-                                        <span class="badge bg-primary me-2 mb-2">
-                                            Megafonía
-                                        </span>
-
-                                        <span class="badge bg-secondary me-2 mb-2">
-                                            Canalización
-                                        </span>
-
-                                        <span class="badge bg-dark me-2 mb-2">
-                                            Acero galvanizado
-                                        </span>
-
-                                        <span class="badge bg-success mb-2">
-                                            Instalación eléctrica
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="modal-footer">
-
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        (click)="mostrarProyectoMegafonia()">
-
-                                        <i class="bi bi-x-circle me-2"></i>
-
-                                        Cerrar
-
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Fondo oscuro de los modales -->
-
-                    <div *ngIf="mostrarRehabilitacion || mostrarMegafonia" class="modal-backdrop fade show"></div>
+                    </article>
 
                 </div>
 
-            </section>
+
+                <!-- ================================================= -->
+                <!-- MEGAFONÍA -->
+                <!-- ================================================= -->
+
+                <div class="col-md-6">
+
+                    <article class="project-card h-100">
+
+                        <div class="project-icon">
+                            <i class="bi bi-megaphone"></i>
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Instalación de megafonía
+                        </h3>
+
+                        <p>
+                            Instalación de sistemas de megafonía utilizando
+                            canalización mediante tubos de acero galvanizado
+                            en caliente.
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <button type="button" class="btn btn-outline-primary" (click)="mostrarProyectoMegafonia()">
+
+                                <i class="bi" [class.bi-arrow-right]="!mostrarMegafonia"
+                                    [class.bi-arrow-up]="mostrarMegafonia">
+                                </i>
+
+                                {{ mostrarMegafonia ? 'Cerrar proyecto' : 'Ver proyecto' }}
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- MODAL REHABILITACIÓN DE EDIFICIOS -->
+            <!-- ================================================= -->
+
+
+            <div *ngIf="mostrarRehabilitacion" class="modal fade show d-block" tabindex="-1" role="dialog"
+                aria-modal="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content">
+
+                        <!-- CABECERA -->
+                        <div class="modal-header">
+
+                            <h5 class="modal-title fw-bold">
+
+                                <i class="bi bi-building text-primary me-2"></i>
+
+                                Rehabilitación de edificios
+
+                            </h5>
+
+                        </div>
+
+
+                        <!-- CUERPO -->
+                        <div class="modal-body">
+
+                            <!-- ================================================= -->
+                            <!-- CENTRALIZACIÓN DE CONTADORES -->
+                            <!-- ================================================= -->
+
+                            <div class="mb-5">
+
+                                <div class="text-center mb-4">
+
+                                    <h4 class="fw-bold">
+                                        <i class="bi bi-speedometer2 text-primary me-2"></i>
+                                        Centralización de contadores
+                                    </h4>
+
+                                    <p class="text-muted">
+                                        Renovación y organización de la centralización de contadores
+                                        eléctricos del edificio.
+                                    </p>
+
+                                </div>
+
+                                <div class="mb-4">
+                                    <img src="img/centralizacion_contadores.jpg"
+                                        alt="Centralización de contadores eléctricos"
+                                        title="Centralización de contadores" class="img-fluid rounded shadow-sm w-100"
+                                        style="max-height: 500px; object-fit: cover;">
+                                </div>
+
+                                <p>
+                                    Uno de los trabajos realizados consiste en la
+                                    <strong>centralización de contadores</strong>, realizando una
+                                    nueva distribución y organización de los equipos de medida
+                                    del edificio.
+                                </p>
+
+                                <p>
+                                    La instalación permite organizar los diferentes contadores
+                                    correspondientes a las viviendas y facilitar su mantenimiento
+                                    y lectura.
+                                </p>
+
+                            </div>
+
+
+                            <!-- ================================================= -->
+                            <!-- CUADRO ELÉCTRICO -->
+                            <!-- ================================================= -->
+
+                            <div class="mb-5 border-top pt-5">
+
+                                <div class="text-center mb-4">
+
+                                    <h4 class="fw-bold">
+                                        <i class="bi bi-lightning-charge text-primary me-2"></i>
+                                        Cuadro eléctrico de zonas comunes
+                                    </h4>
+
+                                    <p class="text-muted">
+                                        Renovación y adaptación del cuadro eléctrico de las
+                                        zonas comunes del edificio.
+                                    </p>
+
+                                </div>
+
+                                <div class="mb-4">
+                                    <img src="img/cuadro_electrico.jpg" alt="Cuadro eléctrico de zonas comunes"
+                                        title="Cuadro eléctrico de zonas comunes"
+                                        class="img-fluid rounded shadow-sm w-100">
+                                </div>
+
+                                <p>
+                                    También se realiza la instalación y renovación de los
+                                    <strong>cuadros eléctricos de las zonas comunes</strong>,
+                                    adaptando la instalación a las necesidades del edificio.
+                                </p>
+
+                                <p>
+                                    El cableado se realiza de forma ordenada y todos los conductores
+                                    llevan sus correspondientes <strong>punteras</strong>, buscando
+                                    una instalación limpia, segura y correctamente terminada.
+                                </p>
+
+                            </div>
+
+
+                            <!-- ================================================= -->
+                            <!-- DESCRIPCIÓN GENERAL -->
+                            <!-- ================================================= -->
+
+                            <div class="mb-4">
+
+                                <h5 class="fw-bold mb-3">
+                                    <i class="bi bi-info-circle text-primary me-2"></i>
+                                    Descripción del trabajo
+                                </h5>
+
+                                <p>
+                                    Trabajos de rehabilitación y renovación de las
+                                    instalaciones eléctricas de edificios, adaptando
+                                    las instalaciones existentes a las nuevas
+                                    necesidades del inmueble.
+                                </p>
+
+                                <p>
+                                    Todo el cableado cumple la normativa y lleva también sus
+                                    correspondientes punteras para conseguir una instalación
+                                    correctamente terminada.
+                                </p>
+
+                                <p>
+                                    También se ejecutan las
+                                    <strong>líneas individuales de cada vivienda</strong>,
+                                    instalando nuevas canalizaciones y conductores
+                                    desde la centralización hasta cada piso.
+                                </p>
+
+                                <p>
+                                    Dentro de la rehabilitación también se realiza la
+                                    instalación de una nueva
+                                    <strong>C.G.P. (Caja General de Protección)</strong>,
+                                    adaptando la instalación a las condiciones requeridas.
+                                </p>
+
+                            </div>
+
+
+                            <!-- ================================================= -->
+                            <!-- TRABAJOS REALIZADOS -->
+                            <!-- ================================================= -->
+
+                            <div class="mb-4">
+
+                                <h5 class="fw-bold mb-3">
+                                    <i class="bi bi-tools text-primary me-2"></i>
+                                    Trabajos realizados
+                                </h5>
+
+                                <div class="row g-3">
+
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-3 h-100">
+
+                                            <i class="bi bi-speedometer2 text-primary me-2"></i>
+
+                                            <strong>
+                                                Centralización de contadores
+                                            </strong>
+
+                                            <p class="text-muted small mb-0 mt-2">
+                                                Organización y renovación de los equipos
+                                                de medida del edificio.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-3 h-100">
+
+                                            <i class="bi bi-diagram-3 text-primary me-2"></i>
+
+                                            <strong>
+                                                Líneas individuales
+                                            </strong>
+
+                                            <p class="text-muted small mb-0 mt-2">
+                                                Nuevas líneas eléctricas para las
+                                                diferentes viviendas.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-3 h-100">
+
+                                            <i class="bi bi-shield-check text-primary me-2"></i>
+
+                                            <strong>
+                                                C.G.P.
+                                            </strong>
+
+                                            <p class="text-muted small mb-0 mt-2">
+                                                Instalación de nueva Caja General
+                                                de Protección.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-3 h-100">
+
+                                            <i class="bi bi-lightning-charge text-primary me-2"></i>
+
+                                            <strong>
+                                                Instalación eléctrica
+                                            </strong>
+
+                                            <p class="text-muted small mb-0 mt-2">
+                                                Renovación y adaptación de las
+                                                instalaciones eléctricas.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================================================= -->
+                            <!-- CARACTERÍSTICAS -->
+                            <!-- ================================================= -->
+
+                            <div class="mt-4">
+
+                                <span class="badge bg-primary me-2 mb-2">
+                                    Centralización de contadores
+                                </span>
+
+                                <span class="badge bg-secondary me-2 mb-2">
+                                    Líneas individuales
+                                </span>
+
+                                <span class="badge bg-success me-2 mb-2">
+                                    C.G.P.
+                                </span>
+
+                                <span class="badge bg-dark me-2 mb-2">
+                                    Instalación eléctrica
+                                </span>
+
+                                <span class="badge bg-warning text-dark mb-2">
+                                    Rehabilitación
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PIE -->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="mostrarProyectoRehabilitacion()">
+
+                                <i class="bi bi-x-circle me-2"></i>
+
+                                Cerrar
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- MODAL INSTALACIÓN DE MEGAFONÍA -->
+            <!-- ================================================= -->
+
+            <div *ngIf="mostrarMegafonia" class="modal fade show d-block" tabindex="-1" role="dialog" aria-modal="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+
+                            <h5 class="modal-title fw-bold">
+
+                                <i class="bi bi-megaphone text-primary me-2"></i>
+                                Instalación de megafonía
+
+                            </h5>
+
+                        </div>
+
+
+                        <div class="modal-body">
+
+                            <div class="text-center mb-4">
+
+                                <i class="bi bi-megaphone display-4 text-primary"></i>
+
+                                <h4 class="fw-bold mt-3">
+                                    Instalación de sistemas de megafonía
+                                </h4>
+
+                            </div>
+
+
+                            <p>
+                                Instalación de sistemas de megafonía destinados
+                                a la distribución de sonido mediante una red de
+                                altavoces y cableado específico.
+                            </p>
+
+                            <p>
+                                Para la instalación se utilizan
+                                <strong>
+                                    canalizaciones mediante tubos de acero
+                                    galvanizado en caliente
+                                </strong>,
+                                proporcionando una instalación resistente y adecuada
+                                para instalaciones técnicas.
+                            </p>
+
+                            <p>
+                                El trabajo incluye la instalación y distribución
+                                de las canalizaciones, el tendido del cableado
+                                y la conexión de los diferentes elementos del
+                                sistema de megafonía.
+                            </p>
+
+
+                            <div class="mt-4">
+
+                                <span class="badge bg-primary me-2 mb-2">
+                                    Megafonía
+                                </span>
+
+                                <span class="badge bg-secondary me-2 mb-2">
+                                    Canalización
+                                </span>
+
+                                <span class="badge bg-dark me-2 mb-2">
+                                    Acero galvanizado
+                                </span>
+
+                                <span class="badge bg-success mb-2">
+                                    Instalación eléctrica
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-outline-secondary"
+                                (click)="mostrarProyectoMegafonia()">
+
+                                <i class="bi bi-x-circle me-2"></i>
+                                Cerrar
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- FONDO OSCURO DE LOS MODALES -->
+            <!-- ================================================= -->
+
+            <div *ngIf="mostrarRehabilitacion || mostrarMegafonia" class="modal-backdrop fade show">
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Cierre -->
+    <!-- ================================================= -->
+    <!-- CIERRE -->
+    <!-- ================================================= -->
 
     <section class="py-5 text-center">
 
